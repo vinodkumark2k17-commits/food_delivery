@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f0e9">
+    <title>GALACTIC FOOD EXPRESS — Good food. Infinite worlds.</title>
+    <meta name="description" content="Human cravings, alien delicacies, and combinations nobody thought were possible. Delivered across the galaxy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to menu</a>
+    <div class="announcement"><span class="announcement-dot"></span> Now delivering to 247 planets <span class="announcement-note">Earth delivery: surprisingly complicated.</span></div>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Galactic Food Express home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>GALACTIC<br>FOOD EXPRESS</span>
+      </a>
+      <button class="mobile-menu-toggle icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span class="menu-lines"></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a><a href="#categories">Categories</a><a href="#deal">Galactic deals</a><a href="#how">How it works</a><a href="#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button search-toggle" aria-label="Search menu" title="Search menu"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+        <button class="icon-button account-button" aria-label="Account information" title="Account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.4"></circle><path d="M5 21c.7-4 3.1-6 7-6s6.3 2 7 6"></path></svg></button>
+        <button class="bag-trigger" aria-label="Open shopping bag"><span>Bag</span><span class="bag-counter" id="bag-count">0</span><span class="bag-arrow">↗</span></button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero section-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> INTERPLANETARY DINING, RECONSIDERED</div>
+          <h1 id="hero-title">Food from<br><em>beyond</em> Earth<span class="period">.</span></h1>
+          <p class="hero-description">Human cravings, alien delicacies, and combinations nobody thought were possible. Delivered across the galaxy.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#menu">Explore the menu <span>↗</span></a><a class="text-link" href="#how">How it works <span>↓</span></a></div>
+          <div class="hero-proof"><div class="proof-stars" aria-label="Rated 4.9 out of 5">★★★★★</div><span>4.9 across 8 known species</span></div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image" role="img" aria-label="A cosmic burger served beneath a lavender planet"></div>
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="hero-label hero-label-top"><span class="mini-star">✳</span> SECTOR 07 / EARTH</div>
+          <div class="floating-note"><span class="note-kicker">TODAY'S ORBITAL PICK</span><strong>Cosmic<br>Cheese Burger</strong><span class="note-price">₹499 <span>· 18 min</span></span><button data-quick-add="cosmic-burger" class="note-add">Add to bag <span>+</span></button></div>
+          <div class="hero-caption"><span>01 / 03</span><span>A little taste of home.<br>Several light-years away.</span></div>
+          <span class="hero-spark spark-one">✳</span><span class="hero-spark spark-two">✳</span><span class="hero-spark spark-three">·</span>
+        </div>
+        <div class="hero-bottomline"><span>GOOD FOOD. INFINITE WORLDS.</span><span>EST. 2249 <i></i> MILKY WAY</span></div>
+      </section>
+
+      <section class="category-section section-wrap" id="categories">
+        <div class="section-heading category-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> THREE WORLDS. ONE VERY LARGE MENU.</div><h2>Choose your<br><em>appetite.</em></h2></div><p>From familiar comfort to “is that supposed to move?” — we’ve got a table somewhere.</p></div>
+        <div class="category-list">
+          <button class="category-card category-human" data-category="human"><span class="category-index">01 / HUMAN</span><span class="category-orb"></span><span class="category-copy"><span class="category-title">HOME,<br>REHEATED.</span><span class="category-description">Comfort food from Earth, transported beyond the atmosphere.</span><span class="category-cta">Explore human food <b>↗</b></span></span><span class="category-side">A CLASSIC, IN ANY GRAVITY</span></button>
+          <button class="category-card category-alien" data-category="alien"><span class="category-index">02 / ALIEN</span><span class="category-orb"></span><span class="category-copy"><span class="category-title">TASTE THE<br>UNKNOWN.</span><span class="category-description">Authentic cuisine from civilizations you probably haven’t heard of.</span><span class="category-cta">Explore alien food <b>↗</b></span></span><span class="category-side">APPROVED BY 7 OF 8 SPECIES</span></button>
+          <button class="category-card category-fusion" data-category="fusion"><span class="category-index">03 / FUSION</span><span class="category-orb"></span><span class="category-copy"><span class="category-title">ODDLY<br>PERFECT.</span><span class="category-description">When Earth meets the unknown. Things get deliciously weird.</span><span class="category-cta">Explore fusion <b>↗</b></span></span><span class="category-side">NO DIPLOMATIC INCIDENTS. YET.</span></button>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="section-wrap">
+          <div class="menu-topline"><div><div class="eyebrow"><span class="eyebrow-line"></span> THE INTERSTELLAR MENU</div><h2>Good things<br>are <em>in orbit.</em></h2></div><div class="menu-aside"><span class="mono-label">LIVE FROM 247 WORLDS</span><p>Prepared with care. Packed for vacuum. Occasionally inspected by a very curious moon.</p></div></div>
+          <div class="menu-toolbar">
+            <div class="filter-pills" role="group" aria-label="Filter menu by category">
+              <button class="filter-pill is-active" data-filter-category="all" aria-pressed="true">All <span>24</span></button><button class="filter-pill" data-filter-category="human" aria-pressed="false">Human</button><button class="filter-pill" data-filter-category="alien" aria-pressed="false">Alien</button><button class="filter-pill" data-filter-category="fusion" aria-pressed="false">Fusion</button>
+            </div>
+            <div class="menu-controls">
+              <label class="search-field" id="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="menu-search" type="search" placeholder="Search across the galaxy..." aria-label="Search across the galaxy"><button id="clear-search" aria-label="Clear search">×</button></label>
+              <select id="price-filter" aria-label="Filter by price"><option value="all">Any price</option><option value="under300">Under ₹300</option><option value="300-600">₹300–₹600</option><option value="600-1000">₹600–₹1,000</option><option value="1000plus">₹1,000+</option></select>
+              <select id="diet-filter" aria-label="Filter by dietary preference"><option value="all">All diets</option><option value="vegetarian">Vegetarian</option><option value="vegan">Vegan</option><option value="protein">High protein</option></select>
+              <select id="spice-filter" aria-label="Filter by spice level"><option value="all">Any spice</option><option value="mild">Mild</option><option value="medium">Medium</option><option value="cosmic">Cosmic</option></select>
+              <label class="sort-label"><span>Sort</span><select id="sort-filter" aria-label="Sort menu"><option value="popular">Popular</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option><option value="fastest">Fastest delivery</option></select></label>
+            </div>
+          </div>
+          <div class="menu-resultline"><span id="results-count">24 items, ready for lift-off</span><button class="reset-filters" id="reset-filters">Reset filters <span>↺</span></button></div>
+          <div class="food-grid" id="food-grid" aria-live="polite"></div>
+          <div class="empty-results" id="empty-results" hidden><span class="empty-orbit">∅</span><h3>Nothing in this orbit.</h3><p>Try a different search. The universe is large; the filters are not.</p><button class="button button-dark" id="empty-reset">Show everything <span>↗</span></button></div>
+        </div>
+      </section>
+
+      <section class="favourites-section section-wrap">
+        <div class="favourites-header"><div><div class="eyebrow"><span class="eyebrow-line"></span> HIGHLY REVIEWED BY LOCALS</div><h2>This week’s<br><em>galactic favourites.</em></h2></div><a class="text-link" href="#menu">See all 24 dishes <span>↗</span></a></div>
+        <div class="favourite-strip" id="favourite-strip"></div>
+      </section>
+
+      <section class="how-section section-wrap" id="how">
+        <div class="how-heading"><div class="eyebrow"><span class="eyebrow-line"></span> BETTER THAN TELEPORTATION. PROBABLY.</div><h2>Three steps to<br><em>somewhere delicious.</em></h2></div>
+        <div class="steps">
+          <article class="step-card"><span class="step-number">01</span><div class="step-symbol symbol-world"><i></i></div><h3>Choose your world</h3><p>Pick Human, Alien, or Fusion food. We don’t ask what you are. That would be rude.</p><span class="step-foot">THE MENU IS YOURS</span></article>
+          <article class="step-card"><span class="step-number">02</span><div class="step-symbol symbol-bag"><i></i></div><h3>Place your order</h3><p>Add your favourites to the Galactic Bag. Payment is fictional. Hunger is not.</p><span class="step-foot">SECURE. VERY SECURE.</span></article>
+          <article class="step-card"><span class="step-number">03</span><div class="step-symbol symbol-ship"><i></i></div><h3>Watch it arrive</h3><p>Our fleet delivers through space, time, and the occasional asteroid field.</p><span class="step-foot">TRACKING IS OPTIMISTIC</span></article>
+        </div>
+      </section>
+
+      <section class="fleet-section" id="about">
+        <div class="fleet-visual"><div class="planet planet-large"></div><div class="planet planet-small"></div><div class="ship-art"><span class="ship-window"></span><span class="ship-trail"></span></div><span class="fleet-stamp">GFE<br><small>FLIGHT CREW</small></span><div class="fleet-coordinate">12° 07′ N &nbsp; 77° 35′ E<br>IN TRANSIT / APPROX.</div></div>
+        <div class="fleet-copy"><div class="eyebrow"><span class="eyebrow-line"></span> THE FLEET IS MOSTLY ON TIME</div><h2>From our kitchen<br>to <em>your planet.</em></h2><p>Powered by questionable amounts of technology. And a little bit of very good food.</p><div class="fleet-stats"><div><strong>247</strong><span>Planets served</span></div><div><strong>98.7<small>%</small></strong><span>On-time delivery</span></div><div><strong>4.9<small>★</small></strong><span>Average rating</span></div><div><strong>12M<small>+</small></strong><span>Meals delivered</span></div></div><span class="fleet-footnote">DELIVERY ROUTES CALCULATED BY EXTREMELY QUALIFIED ROBOTS.</span></div>
+      </section>
+
+      <section class="deal-section section-wrap" id="deal">
+        <div class="deal-card"><div class="deal-copy"><div class="eyebrow"><span class="eyebrow-line"></span> A VERY GOOD REASON TO STAY HUNGRY</div><h2>Hungry enough<br>to <em>leave Earth?</em></h2><p>20% off your first galactic order. Your first order is fictional, so technically, all orders are your first.</p><button id="claim-offer" class="button button-light">Claim 20% off <span>↗</span></button><span class="deal-terms">DEMO OFFER · APPLY AT CHECKOUT · NO REAL CURRENCY REQUIRED</span></div><div class="deal-art"><div class="deal-ring"></div><div class="deal-planet"></div><div class="deal-dish"></div><div class="deal-spark">✳</div><span class="deal-percent">20<small>%</small></span></div><span class="deal-side-note">A SMALL GESTURE ACROSS A VERY LARGE DISTANCE</span></div>
+      </section>
+
+      <section class="reviews-section section-wrap">
+        <div class="reviews-heading"><div class="eyebrow"><span class="eyebrow-line"></span> WORD TRAVELS FAST</div><h2>Apparently,<br>it’s <em>quite good.</em></h2><span class="review-rating">★★★★★ <b>4.9 / 5</b></span></div>
+        <div class="review-list"><article class="review-card"><div class="review-stars">★★★★★</div><blockquote>“Honestly forgot I was eating food from Earth.”</blockquote><div class="review-author"><span class="review-avatar avatar-human">A</span><span><b>Alex</b><small>EARTH · VERIFIED HUMAN</small></span><span class="review-species">HUMAN</span></div></article><article class="review-card review-featured"><div class="review-stars">★★★★★</div><blockquote>“Your burger technology is primitive. Unfortunately, it is delicious.”</blockquote><div class="review-author"><span class="review-avatar avatar-alien">Z</span><span><b>Zorb</b><small>XENTHARI PRIME · 2.4 ARMS</small></span><span class="review-species">XENTHARI</span></div></article><article class="review-card"><div class="review-stars">★★★★★</div><blockquote>“Alien curry + Kerala parotta should not work this well.”</blockquote><div class="review-author"><span class="review-avatar avatar-fusion">N</span><span><b>Nikhil</b><small>EARTH · GOOD TASTE</small></span><span class="review-species">FUSION FAN</span></div></article></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main"><a class="footer-brand" href="#top"><span class="footer-brand-mark"><i></i><i></i><i></i></span><span>GOOD FOOD.<br><em>INFINITE WORLDS.</em></span></a><div class="footer-links"><div><span>EXPLORE</span><a href="#menu">Menu</a><a href="#categories" data-footer-category="human">Human food</a><a href="#categories" data-footer-category="alien">Alien food</a><a href="#categories" data-footer-category="fusion">Fusion</a></div><div><span>THE JOURNEY</span><a href="#how">How it works</a><a href="#about">About the fleet</a><a href="#deal">Galactic deals</a><a href="mailto:hello@galacticfood.example">Contact mission control</a></div><div><span>FINE PRINT, FROM SPACE</span><a href="#footer-note">Privacy (we’re fictional)</a><a href="#footer-note">Terms (also fictional)</a><a href="#footer-note">Socials (still fictional)</a></div></div></div>
+      <div class="footer-bottom"><span>© 2249 GALACTIC FOOD EXPRESS</span><span id="footer-note">MADE WITH CARE, SOME MATH, AND ONE VERY LARGE MAP.</span><a href="#top">BACK TO ORBIT ↑</a></div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-mark">+</span><span id="toast-message">Added to your bag</span><button id="toast-close" aria-label="Dismiss message">×</button></div>
+    <div class="overlay" id="overlay" hidden></div>
+    <aside class="bag-drawer" id="bag-drawer" role="dialog" aria-modal="true" aria-labelledby="bag-title" aria-hidden="true">
+      <div class="drawer-head"><div><div class="eyebrow"><span class="eyebrow-line"></span> CURRENTLY IN ORBIT</div><h2 id="bag-title">Your bag<span class="bag-title-count" id="drawer-count">0 items</span></h2></div><button class="close-button" data-close aria-label="Close bag">×</button></div>
+      <div class="bag-items" id="bag-items"></div>
+      <div class="bag-empty" id="bag-empty"><div class="empty-bag-orbit"><i></i></div><h3>A bag with nothing<br>in its orbit.</h3><p>Let’s fix that. We know a burger.</p><button class="button button-dark" data-close-bag>Explore the menu <span>↗</span></button></div>
+      <div class="drawer-bottom" id="drawer-bottom"><div class="totals-row"><span>Subtotal</span><strong id="bag-subtotal">₹0</strong></div><div class="totals-row"><span>Express orbit delivery</span><strong id="bag-delivery">₹99</strong></div><div class="totals-row"><span>Service fee</span><strong id="bag-service">₹39</strong></div><div class="totals-row totals-total"><span>Total</span><strong id="bag-total">₹0</strong></div><p class="drawer-note">Free delivery over ₹1,200. The robots like large orders.</p><button class="button button-dark checkout-button" id="checkout-button">Proceed to checkout <span>↗</span></button></div>
+    </aside>
+    <dialog class="product-dialog" id="product-dialog" aria-labelledby="detail-name"><button class="close-button dialog-close" data-dialog-close aria-label="Close product details">×</button><div id="product-detail"></div></dialog>
+    <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+      <div class="checkout-shell"><header class="checkout-header"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>GALACTIC<br>FOOD EXPRESS</span></a><div class="checkout-progress"><span class="progress-active">01 BAG</span><i></i><span>02 DESTINATION</span><i></i><span>03 CONFIRM</span></div><button class="close-button" data-dialog-close aria-label="Close checkout">×</button></header>
+        <div class="checkout-content" id="checkout-content"><div class="checkout-intro"><div class="eyebrow"><span class="eyebrow-line"></span> THE FINAL FRONTIER (OF CHECKOUTS)</div><h2 id="checkout-title">Where are we<br><em>taking dinner?</em></h2><p>Demo checkout only. No actual payment, interplanetary or otherwise.</p></div>
+          <form id="checkout-form" class="checkout-form">
+            <section class="checkout-section destination-section"><div class="checkout-section-heading"><span>01</span><div><h3>Delivery destination</h3><p>We need somewhere to land the snacks.</p></div></div><div class="form-grid"><label class="form-field"><span>Planet / world</span><select id="destination-planet" required><option value="">Choose your planet</option><option>Earth</option><option>Mars Colony 07</option><option>Europa Station</option><option>Titan Research Base</option><option>Xenthari Prime</option><option>Orbital Station 12</option></select></label><label class="form-field"><span>Region / sector</span><input id="destination-region" type="text" placeholder="e.g. Kerala, Sector 07" required></label><label class="form-field field-wide"><span>Address / landing coordinates</span><input id="destination-address" type="text" placeholder="Street, habitat, landing pad..." required></label><label class="form-field"><span>Your name</span><input id="customer-name" type="text" placeholder="Who should we look for?" required></label><label class="form-field"><span>Contact (optional)</span><input id="customer-contact" type="text" placeholder="Comms channel"></label></div></section>
+            <section class="checkout-section"><div class="checkout-section-heading"><span>02</span><div><h3>Delivery speed</h3><p>Faster than the speed of hunger.</p></div></div><div class="choice-list"><label class="choice-card"><input type="radio" name="speed" value="standard" checked><span class="choice-radio"></span><span class="choice-text"><b>Standard Orbit</b><small>35 min · patient, planet-friendly</small></span><strong>₹99</strong></label><label class="choice-card"><input type="radio" name="speed" value="express"><span class="choice-radio"></span><span class="choice-text"><b>Hyperdrive Express</b><small>12 min · good things come swiftly</small></span><strong>₹179</strong></label><label class="choice-card"><input type="radio" name="speed" value="priority"><span class="choice-radio"></span><span class="choice-text"><b>Interplanetary Priority</b><small>6 min · we’re not sure how either</small></span><strong>₹299</strong></label></div></section>
+            <section class="checkout-section"><div class="checkout-section-heading"><span>03</span><div><h3>Payment method</h3><p>Pick one. Nothing will actually be charged.</p></div></div><div class="payment-options"><label class="payment-choice"><input type="radio" name="payment" value="Galactic Card" checked><span>GC</span>Galactic Card</label><label class="payment-choice"><input type="radio" name="payment" value="UPI"><span>UP</span>UPI</label><label class="payment-choice"><input type="radio" name="payment" value="SpacePay"><span>SP</span>SpacePay</label><label class="payment-choice"><input type="radio" name="payment" value="Cash on Delivery"><span>COD</span>Cash on Delivery</label></div><p class="fiction-notice">A fictional, secure checkout. Your real money remains safely on your planet.</p></section>
+            <aside class="checkout-summary"><div class="checkout-summary-head"><h3>Mission manifest</h3><span id="checkout-item-count">0 items</span></div><div id="checkout-summary-items"></div><div class="totals-row"><span>Subtotal</span><strong id="checkout-subtotal">₹0</strong></div><div class="totals-row"><span>Delivery</span><strong id="checkout-delivery">₹99</strong></div><div class="totals-row"><span>Service fee</span><strong id="checkout-service">₹39</strong></div><div class="totals-row discount-row" id="discount-row" hidden><span>First-order orbit offer</span><strong id="checkout-discount">−₹0</strong></div><div class="totals-row totals-total"><span>Total</span><strong id="checkout-total">₹0</strong></div></aside>
+            <div class="checkout-submit-row"><p>By ordering, you agree that this is a demo and the food is currently imaginary.</p><button class="button button-dark" type="submit">Place galactic order <span>↗</span></button></div>
+          </form>
+        </div>
+        <section class="order-success" id="order-success" hidden><div class="success-orbit"><span class="success-check">✓</span><i></i><i></i></div><div class="eyebrow"><span class="eyebrow-line"></span> MISSION CONTROL CONFIRMS</div><h2>Order<br><em>confirmed.</em></h2><p class="success-lead">Your food has left the atmosphere.</p><div class="success-ticket"><span>ORDER NUMBER</span><strong id="order-number">GX-2049</strong><span>ESTIMATED ARRIVAL</span><strong id="arrival-time">18 minutes</strong><span>DESTINATION</span><strong id="confirmed-destination">Earth</strong></div><p class="success-note">A highly qualified robot is now doing its best. Track it with your imagination.</p><button class="button button-dark" id="continue-shopping">Back to the galaxy <span>↗</span></button></section>
+      </div>
+    </dialog>
+    <div class="mobile-bag-bar" id="mobile-bag-bar"><button class="mobile-bag-open"><span>View bag <b id="mobile-bag-count">0 items</b></span><strong id="mobile-bag-total">₹0 ↗</strong></button></div>
+    <div class="sr-only" aria-live="polite" id="announcer"></div>
+  </body>
+</html>
